@@ -28,6 +28,9 @@ android {
             )
         }
     }
+    buildFeatures{
+        viewBinding=true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -74,4 +77,8 @@ dependencies {
     // Navigation Components
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.7")
+
+    //kodein di
+    implementation ("org.kodein.di:kodein-di-generic-jvm:6.3.2")
+    implementation ("org.kodein.di:kodein-di-framework-android-x:6.3.2")
 }
